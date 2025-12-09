@@ -1,5 +1,5 @@
 const getMean = (array) => {
-  const sum = array.reduce();
+  const sum = array.reduce((acc, el)=>{return acc+el;});
 }
 
 const calculate = () => {
