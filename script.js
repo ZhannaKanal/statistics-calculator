@@ -12,9 +12,13 @@ const getMedian = (array) => {
 const getMode = (array) => {
   const counts = {};
   array.forEach(el => {
-
+    if(counts[el]){
+      counts[el]++;
+    }else{
+      counts[el] = 1;
+    }
   })
-  return array;
+  return counts;
 }
 
 const calculate = () => {
