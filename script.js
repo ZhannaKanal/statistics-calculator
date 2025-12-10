@@ -39,6 +39,8 @@ const getVariance = (array) => {
   return variance;
 }
 
+
+
 const calculate = () => {
   const value = document.querySelector("#numbers").value;
   const array = value.split(/,\s*/g);
@@ -48,11 +50,11 @@ const calculate = () => {
   const median = getMedian(numbers);
   const mode = getMode(numbers);
   const range = getRange(numbers);
-
+  const variance = getVariance(numbers);
 
   document.querySelector("#mean").textContent = mean;
   document.querySelector("#median").textContent = median;
   document.querySelector("#mode").textContent = mode;
   document.querySelector("#range").textContent = range;
-
+  document.querySelector("#variance").textContent = variance;
 }
