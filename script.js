@@ -9,7 +9,9 @@ const getMedian = (array) => {
   return median;
 }
 
+const getMode = (array) => {
 
+}
 
 
 const calculate = () => {
